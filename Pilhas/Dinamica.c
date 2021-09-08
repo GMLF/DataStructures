@@ -1,6 +1,7 @@
 #include <stdlib.h>
 #include <stdio.h>
 #include <stdbool.h>
+
 /*
 Pilha Estática - 06/09/21
 @Guilherme Moreira.
