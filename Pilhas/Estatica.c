@@ -112,5 +112,6 @@ int main(int argc,const char *argv[]){
 
       //Exibindo o ultimo elemento inserido
       TopoPilhaEstatica(&Pe);
+      
   return 0;
 }//main
