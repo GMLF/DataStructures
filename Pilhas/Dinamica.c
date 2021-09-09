@@ -3,7 +3,7 @@
 #include <stdbool.h>
 
 /*
-Pilha Estática - 06/09/21
+Pilha Dinâmica- 06/09/21
 @Guilherme Moreira.
 Revisão Monitória ED 1
 */
