@@ -98,6 +98,20 @@ int RemoveFilaE(FilaEstatica *f){
   return(removido);               //retorna o elemento removido da fial estatica
 }//RemoveFilaE
 
+void PrimeiroFilaE(FilaEstatica *f){
+  //Verifica se estourou o vetor e tem posições livre e reseta pra zero
+  f->inicio=BufferCircular(f->inicio);
+  //Exibindo pro usuário
+  printf("Primeiro elemento da fila [%d]\n",f->vetor[f->inicio]);
+}//PrimeiroFilaE
+
+void UltimoFilaE(FilaEstatica *f){
+  //Verifica se estourou o vetor e tem posições livre e reseta pra zero
+  f->fim=BufferCircular(f->fim);
+  //Exibindo pro usuario
+  printf("Ultimo elemento da fila [%d]\n",f->vetor[f->fim]);
+}//UltimoFilaE
+
 //-------------------------Função Principal Main--------------------------------
 int main(int argc, const char *argv[]){
   //váriaveis
@@ -125,6 +139,9 @@ int main(int argc, const char *argv[]){
     printf("Novo elemento inserido, testando buffer circular");
     InsereFilaE(&fe, 7);
     ExibeFilaE(&fe);
+
+    PrimeiroFilaE(&fe);
+    UltimoFilaE(&fe);
 
  return 0;
 }//Main
