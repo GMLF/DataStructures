@@ -112,7 +112,6 @@ int main(int argc, const char *argv[]){
 
     printf("Tamanho da Fila Estatica [%d]\n",TamanhoFilaE(&fe));
 
-
     InsereFilaE(&fe, 10);
     InsereFilaE(&fe, 3);
     InsereFilaE(&fe, 15);
