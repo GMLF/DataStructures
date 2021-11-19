@@ -1,0 +1,14 @@
+void DestruirDinamica(PilhaDinamica *p){
+  PtrNoPilha destruir;
+
+  while(p->topo !=NULL){
+
+    destruir=p->topo;
+
+    p->topo=p->topo->proximo;
+
+    free(destruir);
+
+    p->contador--;
+  }//While
+}//DestruirDinamica
